@@ -26,7 +26,9 @@ Full data files - over 30,000 records
 > new_york_city.csv
 
 ### Bugs log (refactoring)
-
+1. def date_filters()
+The quit option is not functional and not a requirement for filter selection.
+> removed quit option from user prompts
 
 
 ### Credits
