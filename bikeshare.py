@@ -7,9 +7,9 @@ from datetime import datetime as dt
 import calendar
 
 
-cities = {'nyc': 'new_york_city.csv',
-          'chi': 'chicago.csv',
-          'dc': 'washington.csv'}
+cities = {'nyc': 'new_york_city_v2.csv',
+          'chi': 'chicago_v2.csv',
+          'dc': 'washington_v2.csv'}
 
 months = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6}
 weekdays = {'sun': 6, 'mon': 0, 'tue': 1, 'wed': 2, 'thu': 3, 'fri': 4, 'sat': 5, 'none': 7}
@@ -55,11 +55,11 @@ def date_filters():
     # --- filter input and error checking loop
     while city_date != 'quit':
         city_date = input(
-            "Do you want to filter by month (enter 'm'),\n day of the week (enter 'd'),"
-            "\n both month and day of the week (enter 'b')\n or none (enter 'n')?: ").lower()
+            "Do you want to filter by month (enter 'm'), day of the week (enter 'd'),"
+            "\n both month and day of the week (enter 'b') or none (enter 'n')?: ").lower()
 
         if city_date not in date_filter:
-            print("\nIncorrect selection, please try again.\nIf you would like to quit program, type 'quit'")
+            print("\nIncorrect selection, please try again.")
             continue
         else:
             print("You are filtering by:", city_date)
@@ -71,8 +71,7 @@ def date_filters():
 
             if month_in not in months:
                 print(
-                    "\nIncorrect selection, please check spelling and try again."
-                    "\nIf you would like to quit program, type 'quit'")
+                    "\nIncorrect selection, please check spelling and try again.")
                 continue
             else:
                 print("Selected month is: ", month_in)
@@ -86,8 +85,7 @@ def date_filters():
 
             if weekday not in weekdays:
                 print(
-                    "\nIncorrect selection, please check spelling and try again."
-                    "\nIf you would like to quit program, type 'quit'")
+                    "\nIncorrect selection, please check spelling and try again.")
                 continue
             else:
                 print("Selected day of week is: ", weekday)
@@ -104,7 +102,7 @@ def date_filters():
                 "\n Enter one the 3-letter abbreviations: sun, mon, tue, wed, thu, fri, or sat: ").lower()
 
             if (month_in not in months) or (weekday not in weekdays):
-                print("\nIncorrect selection, please try again.\nIf you would like to quit program, type 'quit'")
+                print("\nIncorrect selection, please try again.")
                 continue
             else:
                 print("Selected month is: ", month_in)
