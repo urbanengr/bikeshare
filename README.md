@@ -30,6 +30,11 @@ Full data files - over 30,000 records
 The quit option is not functional and not a requirement for filter selection.
 > removed quit option from user prompts
 
+2. def select_city()
+The user input prompt for city selection shows ‘quit’ as a choice. However, if ‘quit’ is entered the program does not quit but continues to the date_filter function.
+> modify first if statement
+> add if statement to main function for restart option
+
 
 ### Credits
 Udacity nanodegree - Programming for Data Science with Python
