@@ -35,6 +35,11 @@ The user input prompt for city selection shows ‘quit’ as a choice. However, 
 > modify first if statement
 > add if statement to main function for restart option
 
+3. def raw_data()
+function keeps prompting for more data even at end of dataframe.
+> modified while and if statements to check for end of dataframe.
+> show total no. of records
+
 
 ### Credits
 Udacity nanodegree - Programming for Data Science with Python
